@@ -1,4 +1,12 @@
 NthPrimeIntent what is the {Number} prime number
 NthPrimeIntent {Number} prime number
+NthPrimeIntent what is the {Number} prime
+NthPrimeIntent {Number} prime
+IsPrimeIntent is {Number} prime number
+IsPrimeIntent {Number} is prime number
 IsPrimeIntent is {Number} prime
 IsPrimeIntent {Number} is prime
+IsPrimeIntent is {Number} a prime number
+IsPrimeIntent {Number} is a prime number
+IsPrimeIntent is {Number} a prime
+IsPrimeIntent {Number} is a prime

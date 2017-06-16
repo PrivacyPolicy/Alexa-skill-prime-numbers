@@ -1,0 +1,1 @@
+zip -rf NthPrimeNumber.zip index.js node_modules

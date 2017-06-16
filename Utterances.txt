@@ -1,0 +1,4 @@
+NthPrimeIntent what is the {Number} prime number
+NthPrimeIntent {Number} prime number
+IsPrimeIntent is {Number} prime
+IsPrimeIntent {Number} is prime

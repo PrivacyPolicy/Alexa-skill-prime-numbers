@@ -1,7 +1,15 @@
-NthPrimeIntent what is the {Number} prime number
-NthPrimeIntent {Number} prime number
-NthPrimeIntent what is the {Number} prime
-NthPrimeIntent {Number} prime
+NthPrimeIntent what is the {Number_One} {Number_Two} prime number
+NthPrimeIntent {Number_One} {Number_Two} prime number
+NthPrimeIntent what is the {Number_One} {Number_Two} prime
+NthPrimeIntent {Number_One} {Number_Two} prime
+NthPrimeIntent the {Number_One} {Number_Two} prime number
+NthPrimeIntent the {Number_One} {Number_Two} prime
+NthPrimeIntent what is the {Number_Two} prime number
+NthPrimeIntent {Number_Two} prime number
+NthPrimeIntent what is the {Number_Two} prime
+NthPrimeIntent {Number_Two} prime
+NthPrimeIntent the {Number_Two} prime number
+NthPrimeIntent the {Number_Two} prime
 IsPrimeIntent is {Number} prime number
 IsPrimeIntent {Number} is prime number
 IsPrimeIntent is {Number} prime

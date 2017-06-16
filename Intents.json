@@ -1,22 +1,26 @@
 {
   "intents": [
     {
+      "intent": "NthPrimeIntent",
       "slots": [
         {
-          "name": "Number",
+          "name": "Number_One",
           "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "Number_Two",
+          "type": "ITH_NUMBER"
         }
-      ],
-      "intent": "NthPrimeIntent"
+      ]
     },
     {
+      "intent": "IsPrimeIntent",
       "slots": [
         {
           "name": "Number",
           "type": "AMAZON.NUMBER"
         }
-      ],
-      "intent": "IsPrimeIntent"
+      ]
     },
     {
       "intent": "AMAZON.HelpIntent"

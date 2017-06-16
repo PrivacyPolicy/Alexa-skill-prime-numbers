@@ -34,9 +34,12 @@ var handleIntent = function(_this, callback) {
     } else {
         callback(n.value);
     }
-},
+};
 
 var handlers = {
+    'LaunchRequest': function () {
+        this.emit('AMAZON.HelpIntent');
+    },
     'NthPrimeIntent': function (n) {
         // var _this = this;
         // handleIntent(_this, function(n) {
@@ -53,11 +56,6 @@ var handlers = {
         // });
         this.emit(':tell', 'Gabe you\'re not crazy. This is working. :)');
     },
-    'CustomError': function() {
-        this.emit(':tell', "I'm sorry, I've encountered an error.", SKILL_NAME,
-            "I've encountered an error.");
-        this.emit('AMAZON.StopIntent');
-    },
     'UnrecognizedError': function() {
         this.emit(':tell', "I'm sorry, I didn't understand the number you gave.",
             SKILL_NAME, "I've encountered an error understanding that number.");
@@ -72,6 +70,11 @@ var handlers = {
         var speechOutput = "You can ask me for the enth prime number, you can "
             + "ask me whether a number is prime, or, you can say exit... What can I "
             + "help you with?";
+        var reprompt = "What can I help you with?";
+        this.emit(':ask', speechOutput, reprompt);
+    },
+    'AMAZON.HelpIntent': function () {
+        var speechOutput = "You can ask how many people are in space, you can ask me to list the people in space, or, you can say exit... What can I help you with?";
         var reprompt = "What can I help you with?";
         this.emit(':ask', speechOutput, reprompt);
     },

@@ -78,28 +78,7 @@ const ITH_TO_NUM = {
     "sixteenth": 16,
     "seventeenth": 17,
     "eighteenth": 18,
-    "nineteenth": 19,
-    "ith": 0,
-    "1st": 1,
-    "2nd": 2,
-    "3rd": 3,
-    "4th": 4,
-    "5th": 5,
-    "6th": 6,
-    "7th": 7,
-    "8th": 8,
-    "9th": 9,
-    "10th": 10,
-    "11th": 11,
-    "12th": 12,
-    "13th": 13,
-    "14th": 14,
-    "15th": 15,
-    "16th": 16,
-    "17th": 17,
-    "18th": 18,
-    "19th": 19,
-    "0th": 0
+    "nineteenth": 19
 };
 
 var calcNumber = function(slot1, slot2) {
@@ -107,10 +86,13 @@ var calcNumber = function(slot1, slot2) {
     if (slot2 == null || slot2.value == null) {
         n2 = 0;
     } else {
-        try {
-            n2 = ITH_TO_NUM[slot2.value];
-        } catch (e) {
-            n2 = 0;
+        n2 = parseInt(slot2.value);
+        if (isNaN(n2)) {
+            try {
+                n2 = ITH_TO_NUM[slot2.value];
+            } catch (e) {
+                n2 = 0;
+            }
         }
     }
     try {

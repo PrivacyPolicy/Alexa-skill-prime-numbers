@@ -162,5 +162,8 @@ var handlers = {
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', 'Goodbye');
-    }
+    },
+	'SessionEndedRequest': function () {
+		console.log('Session ended');
+	}
 };

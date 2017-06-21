@@ -157,11 +157,6 @@ var handlers = {
         var reprompt = "What can I help you with?";
         this.emit(':ask', speechOutput, reprompt);
     },
-    'AMAZON.HelpIntent': function () {
-        var speechOutput = "You can ask how many people are in space, you can ask me to list the people in space, or, you can say exit... What can I help you with?";
-        var reprompt = "What can I help you with?";
-        this.emit(':ask', speechOutput, reprompt);
-    },
     'AMAZON.CancelIntent': function () {
         this.emit(':tell', 'Goodbye');
     },
